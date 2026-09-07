@@ -3,16 +3,11 @@ kind: ConfigMap
 metadata:
   name: postgres-config
   namespace: default
-  app: demo-voting-app
+  
 data:
   POSTGRES_USER: postgres
   POSTGRES_PASSWORD: your-strong-password-here
   POSTGRES_DB: postgres
 
-spec:
-  containers:
-  - name: postgres
-    image: postgres
-    ports:
-    - containerPort: 5432
+
     
